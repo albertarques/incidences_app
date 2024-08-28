@@ -2,7 +2,6 @@
 
 namespace App\Entity;
 
-class AbstractImage
+abstract class AbstractImage extends AbstractEntity
 {
-
 }
