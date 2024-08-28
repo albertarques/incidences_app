@@ -6,9 +6,9 @@ use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
 
-trait SlugTrait
+trait SlugDescriptionTrait
 {
-    #[Gedmo\Slug(fields: ['name'])]
+    #[Gedmo\Slug(fields: ['description'])]
     #[ORM\Column(type: Types::STRING, length: 255, nullable: false)]
     private string $slug;
 
