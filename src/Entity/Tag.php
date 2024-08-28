@@ -14,7 +14,7 @@ class Tag extends AbstractEntity
     use SlugTagTrait;
 
     #[ORM\Column(length: 255)]
-    private ?string $tag = null;
+    private string $tag;
 
     /**
      * @var Collection<int, Incidence>
